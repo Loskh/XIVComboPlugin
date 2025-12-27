@@ -726,7 +726,7 @@ public class ConfigWindow : Window
             return String.Empty;
 
         Language language = (Language)Service.ClientState.ClientLanguage + 1;
-        if (language != Language.English)
+        if (false)
         {
             var enActionList = Service.DataManager.GameData.Excel.GetSheet<Action>(Language.English);
             var enSkill = enActionList.GetRow(skillID);
